@@ -41,7 +41,6 @@ int main()
     }
     cout << endl;
 
-    // cout << indexOfMin(elements, length);
     selectionSort(elements, length);
 
     cout << "Sorted array : " << endl;
