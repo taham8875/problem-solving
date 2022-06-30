@@ -14,6 +14,7 @@ bool isGood(string element, int limit)
         if (element.find(to_string(i)) == -1)
         {
             isGood = false;
+            break;
         }
     }
     return isGood;
@@ -24,7 +25,6 @@ int main()
     int numberOfElements, limit;
     cin >> numberOfElements >> limit;
     string element;
-    vector<string> elements;
     int numberOfGood = 0;
 
     for (int i = 0; i < numberOfElements; i++)
@@ -34,11 +34,6 @@ int main()
         {
             ++numberOfGood;
         }
-        // elements.push_back(element);
     }
     cout << numberOfGood;
-    // for (auto i = elements.cbegin(); i != elements.cend() ; i++)
-    // {
-    //     if ((element))
-    // }
 }
