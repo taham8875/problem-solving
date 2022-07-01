@@ -20,7 +20,7 @@ int main()
         x1 = x2;
         y1 = y2;
     }
-    // cout << fixed;
-    // cout.precision(9);
+    cout << fixed;
+    cout.precision(9);
     cout << distance / 50 * numberOfPapers;
 }
