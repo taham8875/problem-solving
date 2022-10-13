@@ -30,41 +30,38 @@ public class Main {
 
         int maxSpace = 0;
         for (int i = 1; i < numberOfLanterns; i++) {
-            if (locations[i] - locations[i-1] > maxSpace){
-                maxSpace = locations[i] - locations[i-1];
+            if (locations[i] - locations[i - 1] > maxSpace) {
+                maxSpace = locations[i] - locations[i - 1];
             }
         }
 
 
-
-        if (locations[0] != 0){
-            if (locations[0]   > maxSpace/2.0){
+        if (locations[0] != 0) {
+            if (locations[0] > maxSpace / 2.0) {
                 maxSpace = locations[0];
                 edgeCase = true;
             }
         }
 
-        if (locations[numberOfLanterns-1] != streetLength){
-            if (!edgeCase){
-                if (streetLength - locations[numberOfLanterns-1] > maxSpace/2.0){
-                    maxSpace = streetLength - locations[numberOfLanterns-1];
+        if (locations[numberOfLanterns - 1] != streetLength) {
+            if (!edgeCase) {
+                if (streetLength - locations[numberOfLanterns - 1] > maxSpace / 2.0) {
+                    maxSpace = streetLength - locations[numberOfLanterns - 1];
                     edgeCase = true;
                 }
-            } else if (streetLength - locations[numberOfLanterns-1] > maxSpace ){
-                maxSpace = streetLength - locations[numberOfLanterns-1];
+            } else if (streetLength - locations[numberOfLanterns - 1] > maxSpace) {
+                maxSpace = streetLength - locations[numberOfLanterns - 1];
             }
 
         }
 
-        if (edgeCase){
+        if (edgeCase) {
             System.out.println(maxSpace);
         } else {
-            System.out.println(maxSpace/2.0);
+            System.out.println(maxSpace / 2.0);
         }
 
     }
-
-
 
 
 }
