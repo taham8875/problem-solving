@@ -1,7 +1,5 @@
 // Panoramix's Prediction
 
-const { isPrimitive } = require("util");
-
 // Link : https://codeforces.com/contest/80/problem/A
 
 const readline = require("readline").createInterface({
