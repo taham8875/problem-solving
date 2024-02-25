@@ -1,4 +1,4 @@
-# B 469 - Chat Online - Codeforces
+# B 469 - Chewbaсca and Number - Codeforces
 # Link : https://codeforces.com/contest/469/problem/B
 
 littleXNumberOfTimes, littleZNumberOfTimes, littleZGetsUpAtMin, littleZGetsUpAtMax = map(int, input().split())
